@@ -24,7 +24,7 @@ mean_values = {
 }
 
 # Add subtitle with your name and ID
-st.subheader("Patience Gurumombe: R215904U")
+st.subheader("Patience Gurumombe: R219486B")
 
 # Sidebar navigation for pages
 page = st.sidebar.radio("Choose a page", ("Manual Input", "Simulation"))
@@ -138,3 +138,26 @@ elif page == "Simulation":
 
         # Display the transposed random input in a table with full width and height
         st.write(random_input.T.to_html(classes="full-width-table"), unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <div class="footer">
+        <p>Patience Gurumombe - R219486B | Wine Classification App</p>
+    </div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+        footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
