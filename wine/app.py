@@ -5,7 +5,7 @@ import numpy as np
 import random
 
 # Load the trained model
-model = joblib.load('wine\model.pkl')
+model = joblib.load('.\model.pkl')
 
 # Define the mean values based on the dataset statistics
 mean_values = {
